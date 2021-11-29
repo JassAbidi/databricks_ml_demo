@@ -22,7 +22,7 @@ notebook_path = '/test/unittest_model'
 repo_path = '/Repos/jasser.abidi@databricks.com/databricks_ml_demo'
 
 
-repos_path_prefix='/Repos/michael.shtelma@databricks.com/databricks_ml_demo'
+repos_path_prefix='/Repos/jasser.abidi@databricks.com/databricks_ml_demo'
 git_url = 'https://github.com/JassAbidi/databricks_ml_demo'
 provider = 'gitHub'
 branch = 'main'
