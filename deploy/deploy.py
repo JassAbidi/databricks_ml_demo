@@ -8,7 +8,7 @@
 new_cluster_config = """
 {
     "spark_version": "7.3.x-scala2.12",
-    "node_type_id": "i3.xlarge",
+    "node_type_id": "Standard_DS3_v2",
     "aws_attributes": {
       "availability": "ON_DEMAND"
     },
