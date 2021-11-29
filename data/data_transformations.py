@@ -95,10 +95,6 @@ class LendingClubDataProvider():
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 def get_dummy_test_data():
   dataProvider = LendingClubDataProvider(spark, limit=1333)
 
@@ -107,9 +103,3 @@ def get_dummy_test_data():
   return X_train, Y_train
   
   
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC 
-# MAGIC Hello

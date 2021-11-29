@@ -19,11 +19,11 @@ new_cluster_config = """
 existing_cluster_id = '0820-100141-forum325'
 # Path to the notebook with the integration test
 notebook_path = '/test/unittest_model'
-repo_path = '/Repos/michael.shtelma@databricks.com/databricks_ml_demo'
+repo_path = '/Repos/jasser.abidi@databricks.com/databricks_ml_demo'
 
 
 repos_path_prefix='/Repos/michael.shtelma@databricks.com/databricks_ml_demo'
-git_url = 'https://github.com/mshtelma/databricks_ml_demo'
+git_url = 'https://github.com/JassAbidi/databricks_ml_demo'
 provider = 'gitHub'
 branch = 'main'
 
@@ -81,10 +81,11 @@ try:
   jobs_service = JobsService(api_client)
 
   notebook_task = {'notebook_path': repo_path + notebook_path}
-  #new_cluster = json.loads(new_cluster_config)
+  new_cluster = json.loads(new_cluster_config)
 
   # Submit integration test job to Databricks REST API
-  res = jobs_service.submit_run(run_name="xxx", existing_cluster_id=existing_cluster_id,  notebook_task=notebook_task, )
+  #res = jobs_service.submit_run(run_name="xxx", existing_cluster_id=existing_cluster_id,  notebook_task=notebook_task, )
+  res = jobs_service.submit_run(run_name="xxx", new_cluster=new_cluster,  notebook_task=notebook_task)
   run_id = res['run_id']
   print(run_id)
 
